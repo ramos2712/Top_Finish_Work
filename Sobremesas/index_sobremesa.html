@@ -12,7 +12,7 @@
     <!-- sobremesas == eyes || oculos == sobremesa -->
 </head>
 
-<body style="background-image: url(https://receitinhas.com.br/wp-content/uploads/2022/09/sobremesa-para-criancas.jpg); background-size: cover;">
+<body style="background-image: url(https://storage.alboom.ninja/sites/10749/media/raquel_e_pc__257__56c0d25af343.jpg?t=1574347547); background-size: cover;">
     <div class="container-xl rounded p-4 text-bg-danger text-center mt-3" style="opacity: 0.8;width: 60%;">
         <form id="form" onsubmit="return salvarSobremesa(event);">
             <p class="p-3 h4 rounded shadow text-light">Cadastrar Sobremesa</p>
@@ -70,7 +70,7 @@
                         id_sobremesa.value = tr.children[0].innerHTML;
                         nome_sobremesa.value = tr.children[1].innerHTML;
                         tipo_sobremesa.value = tr.children[2].innerHTML;
-                        valor_sobremesa.value = tr.children[4].innerHTML;
+                        valor_sobremesa.value = tr.children[3].innerHTML;
                     }
                 }
             }
@@ -87,10 +87,10 @@
                         .catch(error => console.log(error));
                 }
             }
-            function excluirSobremesa(oculos) {
+            function excluirSobremesa(sobremesa) {
                 let tbody = document.getElementById("sobremesas");
                 for (const tr of tbody.children) {
-                    if (tr.children[0].innerHTML == sobremesas.ID) {
+                    if (tr.children[0].innerHTML == sobremesa.ID) {
                         tbody.removeChild(tr);
                     }
                 }
@@ -138,7 +138,7 @@
                 let tdEditar = document.createElement("td");
                 let btnEditar = document.createElement("button");
                 btnEditar.addEventListener("click", editar, false);
-                btnEditar.paramId_spbremesa = sobremesa.id_sobremesa;
+                btnEditar.paramId_sobremesa = sobremesa.id_sobremesa;
                 btnEditar.innerHTML = "Editar";
                 tdEditar.appendChild(btnEditar);
 
@@ -164,7 +164,7 @@
                     if (tr.children[0].innerHTML == sobremesa.id_sobremesa) {
                         tr.children[1].innerHTML = sobremesa.nome_sobremesa;
                         tr.children[2].innerHTML = sobremesa.tipo_sobremesa;
-                        tr.children[4].innerHTML = sobremesa.valor_sobremesa;
+                        tr.children[3].innerHTML = sobremesa.valor_sobremesa;
                     }
                 }
             }
@@ -174,7 +174,7 @@
                     headers: { 'Content-type': "application/json; charset=UTF-8" }
                 })
                     .then(response => response.json())
-                    .then(eyes => inserirSobremesa(sobremesas))
+                    .then(sobremesas => inserirSobremesas(sobremesas))
                     .catch(error => console.log(error));
             }
 
