@@ -13,26 +13,25 @@
     <BODY style="background-color: #FFDAB9;">          
     <div class="container mt-5">
         <div class="row justify-content-center">
-            <div class="col-md-6">
+            <div class="col-md-5">
                 <div class="card">
-                    <div class="card-header mx-auto text-center" >                            
-                        <a href="#"><img src="../smile.jpg" alt="logo" class="img-fluid mb-3 w-25"></a>
+                    <div class="card-header mx-auto text-center"  style="background-color: #FFF;">                            
+                        <a href="#"><img src="../Luly.png" alt="logo" class="img-fluid mb-3" style="width: 200px;"></a>
                         <div class="text-center">
-                            <h3>Entrar</h3>
-                            <h6>Realize seu login para acessar</h6>
+                            <h6>Realize seu login para Entrar</h6>
                         </div>
                     </div>
                     <div class="card-body">
                         <form class="card-form text-center" action="testLogin.php" method="POST">
                             <div class="form-group m-3">
                                 <label for="username">CPF:</label>
-                                <input type="text" class="form-control w-50 mx-auto" name="CPF" id="CPF" placeholder="Digite seu CPF">
+                                <input type="text" class="form-control mx-auto text-center mt-2" name="CPF" id="CPF" placeholder="Digite seu CPF" style="width: 250px;">
                             </div>
                             <div class="form-group m-3">
                                 <label for="password">Senha:</label>
-                                <input type="password" class="form-control w-50 mx-auto" name="senha" placeholder="Digite sua senha">
+                                <input type="password" class="form-control mx-auto text-center mt-2" name="senha" placeholder="Digite sua senha" style="width: 250px;">
                             </div>
-                            <button type="submit" class="btn btn-primary mt-3 p-3">Entrar</button>
+                            <button type="submit" name="submit" class="btn btn-primary mt-3 p-3 w-25">Entrar</button>
                         </form>
                     </div>
                 </div>
