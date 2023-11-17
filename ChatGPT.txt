@@ -1,0 +1,6 @@
+Perguntas realizadas ao ChatGPT durante o trabalho : 
+
+1. Olá chat. Como Inserir uma máscara de Input para valores em reais ?
+
+2. Chat, tem um  exemplo de form de login responsivo com bootstrap ?
+
