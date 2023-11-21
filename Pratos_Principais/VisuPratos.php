@@ -45,12 +45,12 @@
                 <td> <?php echo $dados['categoria_prato']; ?> </td>
                 <td> <?php echo $dados['valor_prato']; ?> </td>
                 <td>
-                    <a href="EditPratos.php?editar=<?php echo $dados['id_pratos']; ?>">
+                    <a href="EditPratos.php?editar=<?php echo $dados['id_prato']; ?>">
                         <img height='24' width='24' src='../img/edit.png'> </a>
                 </td>
                 <td>
-                    <a href="ProcessaPratos.php?deletar=<?php echo $dados['id_pratos']; ?>">
-                        <img height='24' width='24' src='../img/del.png' /> </a>
+                    <a href="ProcessaPratos.php?deletar=<?php echo $dados['id_prato']; ?>">
+                        <img height='24' width='24' src='../img/delet.png' /> </a>
                 </td>
             </tr>
             <?php endwhile; ?>

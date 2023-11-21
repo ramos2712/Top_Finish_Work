@@ -36,14 +36,14 @@ $dados = mysqli_fetch_assoc($resultado);
             </div>
             <div class="form-radio m-2">
                 <label class="form-check-label m-2"> <b>Categoria :</b> </label> <br>
-                <label> <input type="radio" name="categoria_prato" class="form-check-input m-1" value="vegetariano" <?php if ($dados['categoria_prato'] == "vegetariano") echo "checked"; ?>/>Vegetariano</label><br>
-                <label><input type="radio" name="categoria_prato" class="form-check-input m-1" value="premium" <?php if ($dados['categoria_prato'] == "premium") echo "checked"; ?> />Premium</label><br>
-                <label><input type="radio" name="categoria_prato" class="form-check-input m-1" value="jantar" <?php if ($dados['categoria_prato'] == "jantar") echo "checked"; ?>/>Jantar</label><br>
-                <label><input type="radio" name="categoria_prato" class="form-check-input m-1" value="almoço" <?php if ($dados['categoria_prato'] == "almoço") echo "checked"; ?>/>Almoço</label>
+                <label> <input type="radio" name="categoria_prato" class="form-check-input m-1" value="Vegetariano" <?php if ($dados['categoria_prato'] == "vegetariano") echo "checked"; ?>/>Vegetariano</label><br>
+                <label><input type="radio" name="categoria_prato" class="form-check-input m-1" value="Premium" <?php if ($dados['categoria_prato'] == "premium") echo "checked"; ?> />Premium</label><br>
+                <label><input type="radio" name="categoria_prato" class="form-check-input m-1" value="Jantar" <?php if ($dados['categoria_prato'] == "jantar") echo "checked"; ?>/>Jantar</label><br>
+                <label><input type="radio" name="categoria_prato" class="form-check-input m-1" value="Almoço" <?php if ($dados['categoria_prato'] == "almoço") echo "checked"; ?>/>Almoço</label>
             </div>
             <div class="form-group">
                 <label> <b>Valor :</b> </label>
-                <input type="text" name="valor_prato" id="valor" class="form-input m-3 rounded" value="<?php echo $dados['participantes']; ?>" /> 
+                <input type="text" name="valor_prato" id="valor" class="form-input m-3 rounded" value="<?php echo $dados['valor_prato']; ?>" /> 
             </div>
                 <button class="btn btn-light mt-5" type="submit" name="editar" class="form-input">Editar</button>
         </form>

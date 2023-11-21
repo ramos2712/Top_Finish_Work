@@ -4,3 +4,22 @@ Perguntas realizadas ao ChatGPT durante o trabalho :
 
 2. Chat, tem um  exemplo de form de login responsivo com bootstrap ?
 
+3. Chatat, quero que a opção de cadastrar uma sobremesa fique em um arquivo separado da listagem de sobremesas, 
+como posso separar esse código sem perder a funcionalidade ?
+
+4. pode demonstrar com o código, como fica o arquivo cadastrar_sobremesa.php ?
+--------------------------------------------------------------------------------------------
+
+Sistema com : 
+
+50% - (4 pontos) 3 cruds com pelo menos 4 atributos em cada entidade.
+
+OK - (2 pontos) com sessão (controle de usuário).
+
+OK - (1 ponto) com ajax e manipulação DOM em pelo menos 1 CRUD.
+
+OK - (1 ponto) com framework visual.
+
+OK - (1 ponto) usando git/github, cada membro da dupla DEVE ter código no github.
+
+20% - (1 ponto) usando chatgpt, ter no mínimo 10 comandos.

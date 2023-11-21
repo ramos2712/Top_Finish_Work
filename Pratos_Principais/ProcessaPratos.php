@@ -14,7 +14,7 @@ if (isset($_POST['cadastrar'])) {
 if (isset($_POST['editar'])) {
     $id_prato = $_POST['id_prato'];
     $nome_prato = $_POST['nome_prato'];
-    $categoria_prato = $_POST['categoria_pratp'];
+    $categoria_prato = $_POST['categoria_prato'];
     $valor_prato = $_POST['valor_prato'];
 
     $sql = "UPDATE pratos_principais 
