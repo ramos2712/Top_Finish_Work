@@ -4,7 +4,7 @@ function conectar(){
     $user = "root";
     $password = "";
     $banco = "restaurante";
-
+    
     $conect = mysqli_connect($host, $user, $password, $banco);
     if ($conect) {
         return $conect;

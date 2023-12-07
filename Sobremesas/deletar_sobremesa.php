@@ -11,5 +11,4 @@ if($resultado == true){
 } else {
     die("Erro ao Deletar Sobremesa" . mysqli_errno($conectar) . ": " . mysqli_error($conectar));
 }
-
 ?>

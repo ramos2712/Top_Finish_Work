@@ -40,11 +40,11 @@ include_once('processaBebidas.php');
                     <td> <?php echo $dados['litro_bebida']; ?> </td>
                     <td> <?php echo $dados['valor_bebida']; ?> </td>
 
-                    <td class="text-center"> <a href="editarBebidas.php?editarBebida=<?php echo $dados['idbebida']; ?>">
-                        <img height='40' width='40' src='../img/edit.png'> </a> 
+                    <td class="text-center"> <a href="editarBebidas.php?editarBebida=<?php echo $dados['id_bebida']; ?>">
+                        <img height='25' width='25' src='../img/edit.png'> </a> 
                     </td>
-                    <td class="text-center"> <a href="processaBebidas.php?deletarBebida=<?php echo $dados['idbebida']; ?>">
-                        <img height='40' width='40' src='../img/delet.png' /> </a>
+                    <td class="text-center"> <a href="processaBebidas.php?deletarBebida=<?php echo $dados['id_bebida']; ?>">
+                        <img height='25' width='25' src='../img/delet.png' /> </a>
                     </td>
         </tr>
 

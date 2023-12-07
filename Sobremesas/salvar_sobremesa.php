@@ -26,3 +26,4 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
         die("Erro ao Editar Sobremesa. Erro: " . mysqli_errno($conexao) . " " . mysqli_error($conexao));
     }
 }
+?>

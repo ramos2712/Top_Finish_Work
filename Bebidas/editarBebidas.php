@@ -3,8 +3,7 @@ include_once("../conecta.php");
 
 $idBebida = $_GET['editarBebida'];
 
-$sql = "SELECT * FROM bebidas WHERE idbebida=" . $idBebida;
-
+$sql = "SELECT * FROM bebidas WHERE id_bebida=" . $idBebida;
 $resultado = mysqli_query($conexao, $sql);
 $dados = mysqli_fetch_assoc($resultado);
 ?>
@@ -24,7 +23,7 @@ $dados = mysqli_fetch_assoc($resultado);
     <hr>
     <div class="row">
     <form action="processaBebidas.php" method="POST">
-        <input type="hidden" name="idBebida" value="<?php echo $idBebida; ?>" />
+        <input type="hidden" name="idBebida" value="<?php echo $dados['id_bebida']; ?>" />
 
         <div class="form-group">
         <label> Nome </label>
